@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 class Contact extends Component {
     render() {
         return (
-            <div>
-                <p>Contact!</p>
+            <div className="fullPage">
+                <p>Want to work with me?</p>
+                <p>Get in touch</p>
             </div>
         );
     }

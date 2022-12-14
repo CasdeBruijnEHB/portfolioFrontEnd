@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Workpage extends Component {
     render() {
         return (
-            <div>
+            <div className="fullPage">
                 <p>Workpage!</p>
             </div>
         );

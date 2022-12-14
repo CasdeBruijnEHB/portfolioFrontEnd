@@ -7,7 +7,7 @@ import DataFetching from './components/DataFetching';
 
 
 /*
-      <Homepage/>
+      <DataFetching/>
       <About/>
       <Workpage/>
       <Contact/>
@@ -15,8 +15,11 @@ import DataFetching from './components/DataFetching';
 function App() {
   return (
     <div className="App">
-      
+      <Homepage/>
+      <About/>
       <DataFetching/>
+      <Contact/>
+      
     </div>
   );
 }

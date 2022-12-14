@@ -1,0 +1,25 @@
+
+#workContainer{
+    display: flex;
+
+}
+.worksPost{
+    width: 10%;
+    height: auto;
+}
+
+.worksTitles{
+    font-weight: 800;
+}
+.worksDescriptions{
+    font-style: italic;
+
+}
+.worksImages{
+    width: 80%;
+    height: auto;
+}
+.worksLinks{
+    text-decoration: none;
+
+}

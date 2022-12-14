@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import '../styles/homepage.css'
 
 class Homepage extends Component {
     render() {
         return (
-            <div className="fullPage">
+        <div className="fullPage">
           <nav>
             <div id="navDiv">
               <p>Home</p>
