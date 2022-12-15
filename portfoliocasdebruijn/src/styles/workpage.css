@@ -1,11 +1,29 @@
+/******Navbar*****/
+#navigatieWork{
+    display: flex;
+    justify-content: center;
+}
+
+#navigatieWork p{padding:1%}
+
+#navigatieWork, #workTitle{
+    text-align: center;
+}
+
+/******General*******/
 
 #workContainer{
     display: flex;
+    flex-wrap: wrap;
 
 }
 .worksPost{
-    width: 10%;
+    width: 50%;
     height: auto;
+}
+
+p{
+    font-family: contralto-big, sans-serif;
 }
 
 .worksTitles{
