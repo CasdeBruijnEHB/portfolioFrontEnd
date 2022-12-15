@@ -16,9 +16,41 @@
     url("./fonts/RemboyRegular.ttf") format("truetype");
 }
 
-body{
-  background: rgb(180,176,166);
-  background: linear-gradient(90deg, rgba(180, 176, 166, 0.948) 0%, rgba(232,228,217,1) 100%);
+/* background: rgb(180,176,166);  background: linear-gradient(90deg, rgba(180, 176, 166, 0.948) 0%, rgba(232,228,217,1) 100%); 
+background-image: url('./assets/bg.png');
+background-image: url('./assets/bgTexture_v3.png');
+  box-shadow: inset 0 0 0 1000px rgba(180,176,166, 0.2);
+*/
+#backgroundImage{
+  top:0;
+  left:0;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  
+  
+  
+}
+:root{
+  background: rgb(180,176,166);  background: linear-gradient(90deg, rgba(180, 176, 166, 0.948) 0%, rgba(232,228,217,1) 100%); 
+  background-repeat: no-repeat;
+  background-size: cover;  
+  
+  
+  
+}
+
+
+body {
+  margin: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  
+  
 }
 
 #canvas-container{
@@ -37,6 +69,7 @@ body{
 
 .fullPage{
   height: 100vh;
+  
 }
 .subtitle{
   margin-bottom: 0;
@@ -45,3 +78,4 @@ body{
   font-family: "RemboyRegular";
   font-weight: 500;
 }
+

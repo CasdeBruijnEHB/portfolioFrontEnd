@@ -3,9 +3,6 @@ import axios from 'axios'
 import '../styles/workpage.css'
 
 
-
-
-
 function DataFetching(props) {
     const [posts, setPosts] = useState([])
     const [filteredlist, setFilteredList]=useState([])
@@ -83,7 +80,6 @@ function DataFetching(props) {
                     </div>
                     ))}
             </div>
-               
         </div>
     );
 }

@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import '../styles/homepage.css'
+import background from '../assets/bgTexture_v5.png'
 
 class Homepage extends Component {
     render() {
         return (
+          
         <div className="fullPage">
+            <img id="backgroundImage" src={background} alt="nope"></img>
           <nav>
             <div id="navDiv">
               <p>Home</p>

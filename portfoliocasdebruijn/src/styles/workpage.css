@@ -15,15 +15,21 @@
 #workContainer{
     display: flex;
     flex-wrap: wrap;
-
+    text-align: center;
+    justify-content: center;
+    
+  
 }
 .worksPost{
-    width: 50%;
+    margin:1%;
+    background-color: rgb(221, 160, 85);
+    width: 40%;
     height: auto;
 }
 
 p{
     font-family: contralto-big, sans-serif;
+    
 }
 
 .worksTitles{

@@ -6,6 +6,7 @@ import About from './components/About';
 import DataFetching from './components/DataFetching';
 
 
+
 /*
       <DataFetching/>
       <About/>
@@ -15,6 +16,7 @@ import DataFetching from './components/DataFetching';
 function App() {
   return (
     <div className="App">
+      
       <Homepage/>
       <About/>
       <DataFetching/>
