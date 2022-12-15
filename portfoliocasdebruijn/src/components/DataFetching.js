@@ -15,7 +15,9 @@ function DataFetching(props) {
         
        axios.get('http://localhost:1337/api/Projects?populate=*')
        .then(res=>{
-        //res.data.data.map(post=>(console.log(post.attributes.image.data.attributes.url)))
+        res.data.data.map(post=>
+            (console.log(post.attributes.link !==null)
+            ))
         setPosts(res.data.data)
         setFilteredList(res.data.data)
        })
@@ -55,8 +57,15 @@ function DataFetching(props) {
         }
     }
 
+    function showLink(link){
+        if(link!==null){
+           return <p><a className='worksLinks' href={link}>Visit the website</a></p>
+        }
+        return null
+    }
+
     return (
-        <div className="fullPage">
+        <div >
            <p id="workTitle" className="subtitle">My work</p>
            <div id="navigatieWork">
             <p onClick={() => showData('all')} className="navItem">All</p>
@@ -70,7 +79,7 @@ function DataFetching(props) {
                         <p  className='worksTitles'>{post.attributes.Title}</p>
                         <p  className='worksDescriptions'>{post.attributes.description}</p>
                         <img className='worksImages' src={`http://localhost:1337${post.attributes.image.data.attributes.url}`} ></img>
-                        <p><a className='worksLinks' href={post.attributes.link}>Visit the website</a></p>
+                        {showLink(post.attributes.link)}
                     </div>
                     ))}
             </div>
