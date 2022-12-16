@@ -1,9 +1,37 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useState } from 'react';
+import * as THREE from "three";
 import { Canvas, useThree } from '@react-three/fiber'
-import {Instance, Instances} from '@react-three/drei'
+import {Instance, Instances, useGLTF} from '@react-three/drei'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import Model from '../assets/models/model.js'
+import url from "../assets/welcomevideo.mp4";
 
+
+const TV = () => {
+  
+  const [video] = useState(() => {
+    const vid = document.createElement("video");
+    vid.src = url;
+    vid.crossOrigin = "Anonymous";
+    vid.loop = true;
+    vid.muted = true;
+    vid.play();
+    return vid;
+  });
+
+  return (
+    <group rotation={[Math.PI / 68, Math.PI * 1.23, 0]}>
+     
+      <mesh rotation={[0, 2.40, -0.01]} position={[-2.2, -0.56, -0.6]}>
+        <planeGeometry args={[2.45, 2.2]} />
+        <meshStandardMaterial emissive={"white"} side={THREE.DoubleSide}>
+          <videoTexture attach="map" args={[video]} />
+          <videoTexture attach="emissiveMap" args={[video]} />
+        </meshStandardMaterial>
+      </mesh>
+    </group>
+  );
+};
 
 const CameraController = () => {
     const { camera, gl } = useThree();
@@ -40,6 +68,8 @@ const CameraController = () => {
     </Instances>
   )
 
+  
+
 class ThreeScene extends Component {
     render() {
         return (
@@ -47,7 +77,9 @@ class ThreeScene extends Component {
             <Canvas orthographic camera={{ position: [-1, 0.5, 20], left: -2,
                right: 2, top: 2, bottom: -2, zoom: 100 }}>
                 <Model/>
+                <TV/>
                 <ambientLight intensity={1} />
+                
             </Canvas>
             </div>
         );

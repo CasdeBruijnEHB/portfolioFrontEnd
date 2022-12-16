@@ -84,6 +84,7 @@ body {
   margin-right: 2%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 #canvas-container{
@@ -114,7 +115,9 @@ body {
 }
 #contactContainer{
   height: 95vh;    
+  overflow: hidden;
 }
+/*95*/
 #dataWorkPage{
   height: 205vh;
 }
