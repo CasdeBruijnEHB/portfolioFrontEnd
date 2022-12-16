@@ -1,5 +1,7 @@
 # Portfolio Front-End
-https://github.com/CasdeBruijnEHB/portoBackend
+www.casdebruijn.be
+
+Back-end: https://github.com/CasdeBruijnEHB/portoBackend
 
 Mijn portfolio is gemaakt in React. Het back-end gedeelte moet nog gedeployed worden, dus momenteel kan je alleen het volledig portfolio bekijken als je Strapi runt in de backend.
 
