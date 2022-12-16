@@ -1,0 +1,54 @@
+#containerAbout{
+    padding-left: 20%;
+    padding-right: 20%;
+   
+}
+
+#containerAbout .subtitle{
+    text-align: center;
+}
+#containerAbout div{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#containerAbout div p{
+    text-align: center;
+    
+   
+}
+#contactKnop{
+    font-family: "RemboyRegular";
+    font-weight: 500;
+    
+    color: white;
+    font-size: 5vw;
+    width: 30%;
+}
+#contactKnop a{
+    text-decoration: none;
+    color:white;
+}
+#wantToWork{
+    font-size: 3vw;
+    padding-top: 6%;
+    width: 30%;
+}
+#contactKnopDiv{
+    
+    padding-top:5%;
+    margin-top:0;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle; 
+}
+#blobAbout{
+    position: absolute;
+    z-index: -1;
+    width: 27%;
+    height: auto;
+    left:57%;
+    padding-top: 2%;
+}
+

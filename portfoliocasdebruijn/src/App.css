@@ -21,10 +21,46 @@ background-image: url('./assets/bg.png');
 background-image: url('./assets/bgTexture_v3.png');
   box-shadow: inset 0 0 0 1000px rgba(180,176,166, 0.2);
 */
+
+
+
+
+
+/**Nav**/
+nav{
+  padding-left: 30%;
+  padding-right: 30%;
+  align-items: center;
+  align-self: center;
+
+}
+
+#navDiv{
+  
+  font-family: contralto-big, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  
+}
+#navDiv p a{
+  text-decoration: none;
+  color:black
+}
+#navDiv p a:hover{
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.421);
+  transition: 0.3s;
+}
+
+
+
+/*  */
+
 #backgroundImage{
   top:0;
   left:0;
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   width: 100%;
   height: auto;
@@ -36,7 +72,7 @@ background-image: url('./assets/bgTexture_v3.png');
   background: rgb(180,176,166);  background: linear-gradient(90deg, rgba(180, 176, 166, 0.948) 0%, rgba(232,228,217,1) 100%); 
   background-repeat: no-repeat;
   background-size: cover;  
-  
+  scroll-behavior: smooth;
   
   
 }
@@ -48,15 +84,12 @@ body {
   margin-right: 2%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  
-  
 }
 
 #canvas-container{
   
   z-index: -1;
-  position:fixed;
+  position:absolute;
   padding:0;
   margin:0;
 

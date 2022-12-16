@@ -7,6 +7,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div id="alertMobile">
+      <p>At the moment not available on mobile. Please visit using a desktop computer!</p>
+    </div>
     <App />
   </React.StrictMode>
 );

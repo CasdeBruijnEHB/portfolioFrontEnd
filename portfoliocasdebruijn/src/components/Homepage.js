@@ -1,21 +1,14 @@
 import React, { Component } from 'react';
 import '../styles/homepage.css'
-import background from '../assets/bgTexture_v5.png'
-
+import background from '../assets/bgTexture_v7.png'
+//<img id="backgroundImage" src={background} alt="nope"></img>
 class Homepage extends Component {
     render() {
         return (
           
         <div className="fullPage">
-            <img id="backgroundImage" src={background} alt="nope"></img>
-          <nav>
-            <div id="navDiv">
-              <p>Home</p>
-              <p>About me</p>
-              <p>Work</p>
-              <p>Contact</p>
-            </div>
-          </nav>
+            
+          
           <p id="topHeadTekst"> Hi, my name is</p>
           <p id="headTitle">Cas De Bruijn</p>
           <p id="introTekst">I’m a <span className="introSpans">Front-End Developer</span>, 
