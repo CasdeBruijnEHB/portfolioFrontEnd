@@ -1,6 +1,9 @@
 #alertMobile{
     display: none;
 }
+.App{
+    display: block;
+}
 
 
 @media only screen and (max-width: 480px) {
@@ -22,6 +25,9 @@
         padding-left: 20%;
         padding-right: 20%;
         font-size: x-large;
+    }
+    .App{
+        display: none;
     }
 }
 
