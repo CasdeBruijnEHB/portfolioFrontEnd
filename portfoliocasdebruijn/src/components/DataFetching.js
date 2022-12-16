@@ -194,7 +194,7 @@ function DataFetching(props) {
       };
     */
     return (
-        <div  >
+        <div id="dataWorkPage" >
            <p ref={workTitle} id="workTitle" className="subtitle">My work</p>
            <div id="navigatieWork">
             <p onClick={(event) => { showData('all'); handleClick(event)}} className="navItem activeItem">All</p>
