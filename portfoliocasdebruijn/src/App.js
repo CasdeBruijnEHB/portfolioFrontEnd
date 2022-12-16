@@ -8,6 +8,7 @@ import Workpage from './components/Workpage';
 import About from './components/About';
 import DataFetching from './components/DataFetching';
 import ThreeScene from "./components/ThreeScene";
+import Aboutv2 from "./components/Aboutv2";
 
 
 
@@ -36,9 +37,9 @@ function App() {
       <Homepage/>
       </div>
       <div id="secondpage" className='secondpage'>
-      <About/>
+      <Aboutv2/>
       </div>
-      <div id="thirdpage" className='thirdpage'>
+      <div  id="thirdpage" className='thirdpage'>
       <DataFetching/>
       </div>
       <div id="fourthpage" className='fourthpage'>

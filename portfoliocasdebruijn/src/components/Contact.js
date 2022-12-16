@@ -11,7 +11,7 @@ class Contact extends Component {
                     <div>
                     <p id="wantToWork">Want to work with me?</p>
                     
-                        <img id="blobAbout" src={image}></img>
+                    <img id="blobAbout" src={image}></img>
                         <p id="contactKnop"> <a href="mailto:casdebruijn5@hotmail.com">Get in touch</a> </p>
                   
                     
