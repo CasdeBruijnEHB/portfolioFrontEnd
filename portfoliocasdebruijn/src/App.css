@@ -60,7 +60,7 @@ nav{
 #backgroundImage{
   top:0;
   left:0;
-  z-index: 1;
+  z-index: -2;
   position: absolute;
   width: 100%;
   height: auto;
@@ -103,6 +103,9 @@ body {
 .fullPage{
   height: 100vh;
   
+}
+#contactContainer{
+  height: 95vh;    
 }
 .subtitle{
   margin-bottom: 0;

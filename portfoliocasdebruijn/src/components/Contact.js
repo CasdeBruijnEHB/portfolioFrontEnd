@@ -5,7 +5,7 @@ import image from '../assets/blobV1.png'
 class Contact extends Component {
     render() {
         return (
-            <div className="fullPage">
+            <div id="contactContainer" className="fullPage">
                 <div id="containerAbout">
                     <p className="subtitle">Contact me</p>
                     <div>

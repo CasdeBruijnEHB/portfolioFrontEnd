@@ -17,5 +17,6 @@
     padding-right: 0%;
     width: 30%;
     height: auto;
+    z-index: -3;
 
 }
