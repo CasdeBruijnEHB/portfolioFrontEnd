@@ -10,6 +10,7 @@
    
     *{
         background-color: white;
+        overflow: hidden;
     }
     #alertMobile{
         width: 100%;
@@ -19,16 +20,15 @@
         display: block;
         text-align: center;
         padding-top: 50%;
+       
     }
-    
     #alertMobile p{
         padding-left: 20%;
         padding-right: 20%;
         font-size: x-large;
     }
-    .App{
-        display: none;
-    }
+    
+    
 }
 
 
